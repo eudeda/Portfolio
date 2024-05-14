@@ -7,13 +7,13 @@
     --contrast-font: "Freeman", sans-serif;
 }    
 
-#port-section {
+#cards-sections {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.port-container-title {
+.cards-container-title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,19 +21,14 @@
     width: 90%;
 }
 
-.port img {
-    width: 100%;
-    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.267);
-}
-
-.port-title {
+.cards-title {
     display: flex;
     align-items: center;
     height: 90%;
     width: 80%;
 }
 
-.port-title h2 {
+.cards-title h2 {
     font-family: var(--contrast-font);
     font-weight: 500;
     font-size: 3em;
@@ -74,8 +69,7 @@
     padding: 16px;
 }
 
-.card-content-port h2,
-p {
+.card-content-port h2, p {
     font-family: var(--font);
     margin-top: 10px;
 }
@@ -94,84 +88,79 @@ p {
     background-color: var(--cor03);
 }
 
+@media screen and (max-width: 600px) {
+    .cards-title h2 {
+        font-size: 2em;
+    }
+}
+
 
 /*------------------ ABILITIES --------------------------------------------------*/
 
-#abilities-section {
+/* Define o estilo para o contêiner externo das habilidades */
+.container-cards-external-abilitie {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    justify-content: center; 
     align-items: center;
-    height: 115vh;
+    width: 70%;     /* Define a largura do contêiner */
 }
 
-.abilities-container-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    width: 90%;
-}
-
-.abilities-title {
-    display: flex;
-    align-items: center;
-    height: 90%;
-    width: 80%;
-}
-
-.abilities-title h2 {
-    font-family: var(--contrast-font);
-    font-weight: 500;
-    font-size: 3em;
-}
-
-.container-cards-external-abilities {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 60%;
-}
-
-.container-cards-internal-abilities {
+/* Define o estilo para o contêiner interno das habilidades */
+.container-cards-internal-abilitie {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    width: 60%;
-    height: 100%;
-}
-
-.card-content-abilities {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-}
-
-.card-abilities img {
-    width: 90%;
-    height: auto;
-}
-
-.img-abilities {
-    display: flex;
-    justify-content: center;
     align-items: center;
-
+    flex-wrap: wrap;
+    width: 70%;     /* Define a largura do contêiner */
 }
 
-.img-abilities img {
-    width: 50%;
+/* Define o estilo para cada habilidade */
+.card-abilitie {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 calc(50% - 10px);     /* Define a largura de cada habilidade */
+    margin-bottom: 20px;            /* Adiciona espaço entre as habilidades */
 }
-.card-content-abilities img{
+
+/* Define o estilo para as imagens dentro das habilidades */
+.card-abilitie img {
+    max-width: 100%;        /* Define a largura máxima da imagem */
+    max-height: 100%;       /* Define a altura máxima da imagem */
+
     filter: grayscale();
     transition: all 0.5s;
-} 
+    border: 1px solid red;      
+}
 
-.card-content-abilities>img:hover {
+.card-abilitie img:hover {
     filter: none;
 }
 
+@media screen and (max-width: 1450px) {
+    /* Ajusta o estilo do contêiner interno das habilidades */
+    .container-cards-internal-abilitie {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* Ajusta o estilo das imagens das habilidades */
+    .card-abilitie img {
+        max-width: 300px;       /* Define a largura máxima da imagem */
+        height: auto;           /* Mantém a proporção da imagem */
+        object-fit: contain;    /* Mantém a proporção da imagem e a insere dentro da área definida */
+    }
+}
+@media screen and (max-width: 600px) {
+    /* Mesma coisa da media de cima 😎👍 */
+    .card-abilitie img {
+        max-width: 200px;
+        height: auto;
+        object-fit: contain;
+    }
+
+
+}
 
 
 
@@ -182,7 +171,6 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid red;
     height: 25vh;
     background-color: var(--cor01);
 }
@@ -190,18 +178,23 @@ p {
 .copyright{
     font-family: var(--font);
     color: rgb(255, 255, 255);
+
 }
 
-.social a i {
-    font-size: 28px;
-}
 .social{
     display: flex;
     justify-content: center;
-    align-self: flex-start;
     flex-wrap: wrap;
     height: 50px;
     width: 300px;
+    margin-top: 30px;
+}
+
+.social i {
+    padding: 4px;
+    font-size: 30px;
+    border-radius: 8px;
+    background-color: white;
 }
 
 .social ul{
