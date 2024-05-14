@@ -129,8 +129,7 @@
     max-height: 100%;       /* Define a altura máxima da imagem */
 
     filter: grayscale();
-    transition: all 0.5s;
-    border: 1px solid red;      
+    transition: all 0.5s;     
 }
 
 .card-abilitie img:hover {
@@ -158,10 +157,7 @@
         height: auto;
         object-fit: contain;
     }
-
-
 }
-
 
 
 /*------------------ Footer --------------------------------------------------*/
