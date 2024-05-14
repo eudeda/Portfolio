@@ -1,0 +1,213 @@
+:root {
+    --cor01:#222831;
+    --cor02: #393e49;
+    --cor03: #00adb5;
+    --cor04: #00fff5;
+    --font: "Inter", sans-serif;
+    --contrast-font: "Freeman", sans-serif;
+}    
+
+#port-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.port-container-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 90%;
+}
+
+.port img {
+    width: 100%;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.267);
+}
+
+.port-title {
+    display: flex;
+    align-items: center;
+    height: 90%;
+    width: 80%;
+}
+
+.port-title h2 {
+    font-family: var(--contrast-font);
+    font-weight: 500;
+    font-size: 3em;
+}
+
+.container-cards-external-port {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.container-cards-internal-port {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    column-gap: 30px;
+}
+
+.card-port {
+    width: 350px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.card-port img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content-port {
+    padding: 16px;
+}
+
+.card-content-port h2,
+p {
+    font-family: var(--font);
+    margin-top: 10px;
+}
+
+.card-content-port p {
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.card-content-port .port-btn {
+    font-family: var(--font);
+    font-weight: 600;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: var(--cor03);
+}
+
+
+/*------------------ ABILITIES --------------------------------------------------*/
+
+#abilities-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 115vh;
+}
+
+.abilities-container-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 90%;
+}
+
+.abilities-title {
+    display: flex;
+    align-items: center;
+    height: 90%;
+    width: 80%;
+}
+
+.abilities-title h2 {
+    font-family: var(--contrast-font);
+    font-weight: 500;
+    font-size: 3em;
+}
+
+.container-cards-external-abilities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+}
+
+.container-cards-internal-abilities {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 100%;
+}
+
+.card-content-abilities {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.card-abilities img {
+    width: 90%;
+    height: auto;
+}
+
+.img-abilities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img-abilities img {
+    width: 50%;
+}
+.card-content-abilities img{
+    filter: grayscale();
+    transition: all 0.5s;
+} 
+
+.card-content-abilities>img:hover {
+    filter: none;
+}
+
+
+
+
+/*------------------ Footer --------------------------------------------------*/
+
+#conteiner-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid red;
+    height: 25vh;
+    background-color: var(--cor01);
+}
+
+.copyright{
+    font-family: var(--font);
+    color: rgb(255, 255, 255);
+}
+
+.social a i {
+    font-size: 28px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    height: 50px;
+    width: 300px;
+}
+
+.social ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
