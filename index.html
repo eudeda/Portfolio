@@ -4,19 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/form.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/form.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>Portifolio</title>
 </head>
 
 <body>
     <header>
-        <nav id="navbar-conteiner">
+        <nav id="navbar-conteiner" data-aos="fade-down">
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -37,8 +39,8 @@
             <div class="hero">
                 <div class="hero-container">
                     <img src="https://www.creativefabrica.com/wp-content/uploads/2021/07/31/Sunburst-blue-Background-Wallpaper-Free-Graphics-15314141-1-1-580x352.jpg"
-                        alt="Foto Portifolio" />
-                    <div class="about-container">
+                        alt="Foto Portifolio" data-aos="fade-right" /> 
+                    <div class="about-container" data-aos="fade-left">
                         <h1>About</h1>
                         <h3>Subheading</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, veniam culpa deleniti
@@ -55,20 +57,20 @@
             <div id="portfolio" class="horizontal-row">
                 <div class="row"></div>
             </div>
-            <div class="cards-container-title">
+            <div class="cards-container-title" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
                 <div class="cards-title">
                     <h2>Portfólio</h2>
                 </div>
             </div>
             <div class="container-cards-external-port">
-                <div class="container-cards-internal-port">
+                <div class="container-cards-internal-port" data-aos="fade-down" data-aos-offset="300" data-aos-duration="1000">
                     <div class="card-port">
                         <div class="card-content-port">
                             <div data-tilt data-tilt-scale="1.1">
                                 <img src="assets/imgs/construcao.jpeg" alt="portifolio imagem">
                             </div>
                             <h2>Lorem</h2>
-                            <p>asdoaksdokasodkas</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum corporis consequatur sequi enim aspernatur quos, minus repellendus tempore, doloribus assumenda dolores incidunt ex rerum earum saepe ipsum at quia soluta.</p>
                             <a class="port-btn" href="#">Abrir Projeto</a>
                         </div>
                     </div>
@@ -78,7 +80,7 @@
                                 <img src="assets/imgs/construcao.jpeg" alt="">
                             </div>
                             <h2>Lorem</h2>
-                            <p>asdoaksdokasodkas</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tenetur ullam, blanditiis iure mollitia accusantium omnis incidunt aut ipsam consequuntur quibusdam quas! Ea vero, velit at unde quis eos libero!</p>
                             <a class="port-btn" href="#">Abrir Projeto</a>
                         </div>
                     </div>
@@ -88,7 +90,7 @@
                                 <img src="assets/imgs/construcao.jpeg" alt="">
                             </div>
                             <h2>Lorem</h2>
-                            <p>asdoaksdokasodkas</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione temporibus quam officiis dolor minima, sunt nemo odio quaerat maiores error nostrum ea sint. Saepe nobis quisquam similique? Reiciendis, voluptate laudantium?</p>
                             <a class="port-btn" href="#">Abrir Projeto</a>
                         </div>
                     </div>
@@ -98,7 +100,7 @@
                                 <img src="assets/imgs/construcao.jpeg" alt="">
                             </div>
                             <h2>Lorem</h2>
-                            <p>asdoaksdokasodkas</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nulla eos, dignissimos dolorum amet ratione vel modi quia, explicabo, commodi debitis eaque inventore repellendus eum adipisci repellat harum error facilis!</p>
                             <a class="port-btn" href="#">Abrir Projeto</a>
                         </div>
                     </div>
@@ -110,28 +112,28 @@
                 <div class="row"></div>
             </div>
             <div class="cards-container-title">
-                <div class="cards-title">
+                <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="cards-title">
                     <h2>Habilidades</h2>
                 </div>
             </div>
             <div class="container-cards-external-abilitie">
-                <div class="container-cards-internal-abilitie">
+                <div class="container-cards-internal-abilitie" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="900" data-aos-easing="ease-in-sine">
                     <div class="card-abilitie" data-tilt data-tilt-scale="1.1">
-                        <img src="assets/imgs/c-300x300.png" alt="Ícone Linguagem C">
+                        <img src="assets/imgs/c-300x300.png" alt="Icone Linguagem C">
                     </div>
                     <div class="card-abilitie" data-tilt data-tilt-scale="1.1">
-                        <img src="assets/imgs/html5-300x300.png" alt="Ícone Linguagem HTML">
+                        <img src="assets/imgs/html5-300x300.png" alt="Icone Linguagem HTML">
                     </div>
                     <div class="card-abilitie" data-tilt data-tilt-scale="1.1">
-                        <img src="assets/imgs/css3-300x300.png" alt="Ícone Linguagem CSS">
+                        <img src="assets/imgs/css3-300x300.png" alt="Icone Linguagem CSS">
                     </div>
                     <div class="card-abilitie" data-tilt data-tilt-scale="1.1">
-                        <img src="assets/imgs/java-300x300.png" alt="Ícone Linguagem JAVA">
+                        <img src="assets/imgs/java-300x300.png" alt="Icone Linguagem JAVA">
                     </div>
                     <div class="card-abilitie" data-tilt data-tilt-scale="1.1">
-                        <img src="assets/imgs/javascript-300x300.png" alt="Ícone Linguagem JavaScript">
+                        <img src="assets/imgs/javascript-300x300.png" alt="Icone Linguagem JavaScript">
                     </div>
-                </section>
+        </section>
 
         <div id="contato" class="horizontal-row">
             <div class="row"></div>
@@ -149,22 +151,22 @@
                 <form action="">
 
                     <div class="form-input">
-                        <p>teste</p>
+                        <p>Nome</p>
                         <input type="name" placeholder="Nome completo">
                     </div>
 
                     <div class="form-input">
-                        <p>teste</p>
+                        <p>Email</p>
                         <input type="email" placeholder="Email">
                     </div>
 
                     <div class="form-input">
-                        <p>teste</p>
+                        <p>Assunto</p>
                         <input type="text" placeholder="Assunto">
                     </div>
 
                     <div class="form-input">
-                        <p>teste</p>
+                        <p>Mensagem</p>
                         <input type="message" placeholder="Digite sua mensagem">
                     </div>
 
@@ -181,6 +183,9 @@
     </section>
 
     <footer id="conteiner-footer">
+        <div id="abilities" class="horizontal-row">
+            <div class="row"></div>
+        </div>
         <div class="copyright">
             <p>Todos direitos reservados ©️</p>
         </div>
@@ -195,6 +200,7 @@
 
     <script src="javascript/mobile-navbar.js"></script>
     <script src="javascript/vanilla-tilt.js"></script>
+    <script src="javascript/aos.js"></script>
 </body>
 
 </html>

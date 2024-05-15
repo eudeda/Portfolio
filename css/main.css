@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
     --cor01:#222831;
     --cor02: #393e49;
@@ -76,7 +78,7 @@
 
 .card-content-port p {
     line-height: 1.3;
-    margin-bottom: 12px;
+    margin-bottom: 38px;
 }
 
 .card-content-port .port-btn {
@@ -86,6 +88,11 @@
     padding: 8px 15px;
     border-radius: 8px;
     background-color: var(--cor03);
+    transition: background-color .3s;
+}
+
+.port-btn:hover {   
+    background-color: var(--cor02);
 }
 
 @media screen and (max-width: 600px) {
@@ -125,8 +132,8 @@
 
 /* Define o estilo para as imagens dentro das habilidades */
 .card-abilitie img {
-    max-width: 100%;        /* Define a largura máxima da imagem */
-    max-height: 100%;       /* Define a altura máxima da imagem */
+    max-width: 50%;        /* Define a largura máxima da imagem */
+    max-height: 50%;       /* Define a altura máxima da imagem */
 
     filter: grayscale();
     transition: all 0.5s;     
@@ -167,7 +174,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 25vh;
     background-color: var(--cor01);
 }
 
@@ -191,6 +197,7 @@
     font-size: 30px;
     border-radius: 8px;
     background-color: white;
+    transition: all 0.4s;
 }
 
 .social ul{
@@ -198,5 +205,10 @@
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.social i:hover{
+    transform: translateY(-3px);
+    box-shadow: 1px 7px 5px rgba(0, 0, 0, 0.856);
 }
 

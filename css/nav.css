@@ -46,7 +46,7 @@ a{
 }
 
 .content a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(133, 132, 132);
 }
 
 .content a::before {

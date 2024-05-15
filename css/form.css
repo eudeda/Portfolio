@@ -78,6 +78,10 @@
     border-radius: 8px;
     border: 0;
     cursor: pointer;
+    font-size: 1.3em;
+    font-family: var(--font);
+    font-weight: 500;
+    color: var(--cor02);
     background-color: var(--cor04);
     width: 90%;
 }
