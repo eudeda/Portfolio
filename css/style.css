@@ -45,7 +45,6 @@ body {
 .logo span {
     color: var(--cor01);
     font-weight: 700;
-    letter-spacing: 12px;
 }
 
 .btn-contato button {
@@ -83,6 +82,7 @@ h2.titulo span {
 
 h2.titulo-bg-branco span {
     color: var(--cor02);
+    text-shadow: 1px 1px #000;
 }
 
 a {
@@ -114,6 +114,10 @@ header > .limite-interface {
 header .logo {
     font-size: 25px;
     line-height: 20px;
+}
+
+header .logo span {
+    text-shadow: 1px 1px #000;
 }
 
 header a {
@@ -184,7 +188,7 @@ section.topo-do-site .flex {
 /* ESTILO ESPECIALIDADES */
 
 section.especialidades {
-    padding: 160px 4%;
+    padding: 280px 4%;
 }
 
 section.especialidades .flex {
@@ -218,7 +222,7 @@ section.especialidades .flex {
 /* ESTILO SOBRE */
 
 section.sobre {
-    padding: 120px 4%;
+    padding: 280px 4%;
     background-color: #faf4ed;
 }
 
@@ -240,6 +244,7 @@ section.sobre .flex {
 .sobre .txt-sobre span {
     display: inline-block;
     color: var(--cor02);
+    text-shadow: 1px 1px #000;
 }
 
 .sobre .txt-sobre p {
@@ -267,7 +272,7 @@ section.sobre .flex {
 /* ESTILO PORTFOLIO */
 
 section.portfolio {
-    padding: 100px 4%;
+    padding: 280px 4%;
 }
 
 section.portfolio .flex {
@@ -508,6 +513,10 @@ footer .logo {
     line-height: 20px;
 }
 
+footer .logo span {
+    text-shadow: 1px 1px #000;
+}
+
 .divisor {
     border-top: 2px solid var(--cor01);
 }
@@ -521,8 +530,128 @@ footer .linha-footer p a {
     color: #000;
 }
 
-footer .assinatura {
-    color: #000;
-    font-size: 26px;
-    font-family: "Kristi", cursive;
+@media screen and (max-width: 1225px) {
+        section.portfolio .flex {
+            gap: 20px;
+        }
+}
+
+@media screen and (max-width: 1020px) {
+        /* GERAL */
+        .flex {
+            flex-direction: column;
+        }
+
+        h2.titulo {
+            font-size: 32px;
+            line-height: 30px;
+        }
+
+        /* HEADER */
+        .menu-desktop, .btn-contato {
+            display: none;
+        }
+
+        /* TOPO */
+        section.topo-do-site {
+            padding: 20px 8%;
+        }
+
+        section.topo-do-site .flex {
+            gap: 50px; 
+        }
+
+        .topo-do-site .img-topo img {
+            width: 100%;
+        }
+
+        .topo-do-site h1 {
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        /* ESPECIALIDADES */
+        section.especialidades {
+            padding: 100px 8%;
+        }
+
+        .box-especialidades {
+            text-align: center;
+        }    
+        
+        /* SOBRE */
+        section.sobre {
+            padding: 120px 8%;
+        }
+
+        section.sobre .flex {
+            flex-direction: column-reverse;
+        }
+
+        .sobre .img-sobre img {
+            width: 100%;
+            max-width: 395px;
+            border-radius: 20px;
+        }
+
+        .sobre .txt-sobre h2 {
+            font-size: 32px;
+            line-height: 34px;
+            text-align: center;
+        }
+
+        .btn-social {
+            text-align: center;
+        }
+
+        /* PROJETOS */
+        section.portfolio {
+            padding: 100px 8%;
+        }
+
+        section.portfolio .flex {
+            gap: 60px;
+        }
+
+        .img-port {
+            width: 100%;
+            max-width: 360px;
+            margin: 0 auto;
+        }
+
+        /* HABILIDADES */
+        section.habilidades {
+            padding: 80px 8%;
+        }
+
+        section.habilidades .flex {
+            align-items: center;
+        }
+
+        .habilidades-box {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* FORMULARIO */
+        section.formulario {
+            padding: 100px 8%;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 60px 8%;
+        }
+
+        footer .flex {
+            gap: 15px;
+        }
+
+        footer .logo p {
+            font-weight: 400;
+        }
+
+        footer .logo span {
+            text-shadow: 1px 1px #000;
+        }
 }
