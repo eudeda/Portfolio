@@ -145,6 +145,7 @@ header nav.menu-desktop ul li {
 /* MENU MOBILE */
 
 .btn-abrir-menu i {
+    display: none;
     color: var(--cor01);
     font-size: 40px;
 }
@@ -615,6 +616,11 @@ footer .linha-footer p a {
         /* HEADER */
         .menu-desktop, .btn-contato {
             display: none;
+        }
+
+
+        .btn-abrir-menu i {
+            display: block;
         }
 
         /* TOPO */
