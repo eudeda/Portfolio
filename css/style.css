@@ -123,7 +123,7 @@ header .logo span {
 
 header a {
     display: inline-block;  
-    color: #747474;
+    color: #c4c4c4;
     text-decoration: none;
     transition: .2s;
 }
@@ -249,6 +249,7 @@ section.topo-do-site .flex {
 .topo-do-site .txt-topo p {
     color: #fff;
     margin: 40px 0;
+    text-align: justify;
 }
 
 /* ESTILO ESPECIALIDADES */
@@ -352,7 +353,6 @@ section.portfolio .flex {
     background-size: cover;
     background-position: 100% 0%;
     transition: 2s;
-    cursor: pointer;
     border-radius: 30px;
     position: relative;
 }
@@ -374,13 +374,31 @@ section.portfolio .flex {
     border-radius: 30px;
     font-size: 26px;
     font-weight: 600;
-    color: #fff;
     opacity: 0;
     transition: .6s;
 }
 
 .overlay:hover {
     opacity: 1;
+}
+
+.overlay > a {
+    color: #fff;
+    padding: 20px;
+    transition: .2s;
+}
+
+.overlay:hover a {
+    animation: animPulsar 1s infinite alternate;
+}
+
+@keyframes animPulsar {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 /* ESTILO HABILIDADES */
