@@ -422,110 +422,31 @@ section.habilidades .flex {
 
 .habilidades-box {
     background-color: #000000ef;
-    width: 600px;
+    width: 1000px;
     padding: 40px;
     margin-top: 50px;
     border-radius: 20px;
     box-shadow: 0 0 20px 5px #00fff757;
+    gap: 12px;
 }
 
-.habilidades-box ul {
-    list-style: none;
-}
-
-.habilidades-box ul li {
-    margin: 50px 0;
-}
-
-.habilidades-box i {
-    font-size: 40px;
-    padding: 5px 0;
-}
-
-.habilidades-box .barras {
-    background-color: #ccc;
-    display: block;
-    height: 20px;
+.tec-box {
+    background-color: #53535344;
     border-radius: 20px;
-    position: relative;
-    overflow: hidden;
+    padding: 10px;
 }
 
-
-.barras > span {
-    height: 20px;
-    background: linear-gradient(to right, #00fff7,#0051ff);
-    position: absolute;
+.tec-box img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 5px;
 }
 
-.habilidades-box .html {
-    width: 70%;
-    animation: html 3s;
-}
-
-.habilidades-box .css {
-    width: 58%;
-    animation: css 3s;
-}
-
-.habilidades-box .javascript {
-    width: 30%;
-    animation: javascript 3s;
-}
-
-.habilidades-box .php {
-    width: 10%;
-    animation: php 3s;
-}
-
-.habilidades-box .wordpress {
-    width: 25%;
-    animation: wordpress 3s;
-}
-
-@keyframes html {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 70%;
-    }
-}
-
-@keyframes css {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 58%;
-    }
-}
-
-@keyframes javascript {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 30%;
-    }
-}
-
-@keyframes php {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 10%;
-    }
-}
-
-@keyframes wordpress {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 25%;
-    }
+.tec-box p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #faf4ed;
+    text-align: center;
 }
 
 /* ESTILO FORMULARIO */
