@@ -1,0 +1,47 @@
+section.sobre {
+    padding: 280px 4%;
+    background-color: #faf4ed;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #000;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre span {
+    display: inline-block;
+    color: var(--cor02);
+    text-shadow: 1px 1px #000;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 0;
+    background-color: var(--cor01);
+    font-size: 22px;
+    margin: 0 5px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.sobre .img-sobre img {
+    width: 395px;
+    border-radius: 20px;
+}

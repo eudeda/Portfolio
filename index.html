@@ -7,8 +7,19 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menuMobile.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/especialidades.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="css/habilidades.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- CSS FILES -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/javascript/menu.js" defer></script>
     <title>Portfólio</title>
@@ -184,33 +195,44 @@
             <div class="limite-interface">
                 <h2 class="titulo titulo-bg-branco">
                     MINHAS <span>HABILIDADES.</span>
-                    <p>🚧Em reforma🚧</p>
                 </h2>
-                <div class="flex">
-                    <div class="habilidades-box flex" data-aos="fade-up" data-aos-duration="2000">
-                        <div class="tec-box">
-                            <img src="assets/imgs/tecnologias/html5-300x300.png" alt="html5">
-                            <p>HTML5</p>
+                <div class="slider">
+                    <i class="fa-solid fa-chevron-left arrow arrow-left"></i>
+                    <i class="fa-solid fa-chevron-right arrow arrow-right"></i>
+
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1" checked>
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+
+                        <div class="slide primeiro-slide">
+                            <img src="assets/imgs/tecnologias/html5-300x300.png" alt="Imagem HTML5">
+                            <img src="assets/imgs/tecnologias/css3-300x300.png" alt="Imagem CSS3">
                         </div>
-                        <div class="tec-box">
-                            <img src="assets/imgs/tecnologias/css3-300x300.png" alt="css3">
-                            <p>CSS3</p>
+
+                        <div class="slide">
+                            <img src="assets/imgs/tecnologias/javascript-300x300.png" alt="Imagem JavaScript">
+                            <img src="assets/imgs/tecnologias/react-300x300.png" alt="Imagem React">
                         </div>
-                        <div class="tec-box">
-                            <img src="assets/imgs/tecnologias/javascript-300x300.png" alt="javascript">
-                            <p>Javascript</p>
+
+                        <div class="slide">
+                            <img src="assets/imgs/tecnologias/tailwind-200x200.png" alt="Imagem Tailwind">
                         </div>
-                        <div class="tec-box">
-                            <img src="assets/imgs/tecnologias/react-300x300.png" alt="react">
-                            <p>React</p>
+
+                        <div class="navegacao-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
                         </div>
-                        <div class="tec-box">
-                            <img src="assets/imgs/tecnologias/tailwind-200x200.png" alt="tailwind">
-                            <p>Tailwind</p>
-                        </div>
+
+                    </div>
+
+                    <div class="navegacao-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
                     </div>
                 </div>
-
             </div>
         </section> <!--habilidades -->
 
@@ -280,6 +302,7 @@
 
 
     <script src="javascript/aos.js"></script>
+    <script src="javascript/slider.js"></script>
 </body>
 
 </html>
