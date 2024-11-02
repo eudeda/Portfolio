@@ -1,0 +1,50 @@
+header {
+    padding: 40px 4%;  
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #000000a9;
+    padding: 15px 4%;
+    margin-top: -1px;
+}
+
+header > .limite-interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 25px;
+    line-height: 20px;
+}
+
+header .logo span {
+    text-shadow: 1px 1px #000;
+}
+
+header a {
+    display: inline-block;  
+    color: #c4c4c4;
+    text-decoration: none;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}

@@ -1,0 +1,49 @@
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.img-topo .img-background {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    background-color: var(--cor02);
+    box-shadow: 0 0px 15px #00fff7;
+}
+
+.topo-do-site .img-topo img,
+.img-topo .img-background  {
+    width: 427px;
+    border-radius: 50%;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+.topo-do-site h1 {
+    font-size: 42px;
+    line-height: 45px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.topo-do-site .txt-topo h1 span {
+    color: var(--cor01);
+}
+
+.topo-do-site .txt-topo p {
+    color: #fff;
+    margin: 40px 0;
+    text-align: justify;
+}

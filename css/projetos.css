@@ -1,0 +1,62 @@
+section.portfolio {
+    padding: 280px 4%;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 2s;
+    border-radius: 30px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000009c;
+    border-radius: 30px;
+    font-size: 26px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .6s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay > a {
+    color: #fff;
+    padding: 20px;
+    transition: .2s;
+}
+
+.overlay:hover a {
+    animation: animPulsar 1s infinite alternate;
+}
+
+@keyframes animPulsar {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,36 @@
+footer {
+    padding: 60px 4%;
+    background-color: #fff;
+}
+
+footer .flex {
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+footer .linha-footer {
+    padding: 20px 0;
+}
+
+footer .logo {
+    font-size: 25px;
+    line-height: 20px;
+}
+
+footer .logo span {
+    text-shadow: 1px 1px #000;
+}
+
+.divisor {
+    border-top: 2px solid var(--cor01);
+}
+
+footer .linha-footer p i {
+    font-size: 22px;
+    color: var(--cor02);
+}
+
+footer .linha-footer p a {
+    color: #000;
+}

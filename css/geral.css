@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Kristi&display=swap');
+
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font: "Poppins", sans-serif;
+
+    /* colors */
+    --cor01: #00fff7;
+    --cor02: #08dbd4;;
+}
+
+body {
+    background-color: #000000fa;
+    height: 100vh;
+    font-family: var(--font);
+    padding-top: 80px;
+}
+
+.limite-interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.logo > a {
+    font-weight: 300;
+    color: white;
+}
+
+.logo-bg-branco > a {
+    font-weight: 300;
+    color: #000;
+}
+
+.logo span {
+    color: var(--cor01);
+    font-weight: 700;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: 0;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--cor01);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover, form .btn-enviar input:hover {
+    box-shadow: 0px 0px 12px var(--cor01);
+    transform: scale(1.1);
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo-bg-branco {
+    color: #000;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: var(--cor01);
+}
+
+h2.titulo-bg-branco span {
+    color: var(--cor02);
+    text-shadow: 1px 1px #000;
+}
+
+a {
+    text-decoration: none;
+}
